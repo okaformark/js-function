@@ -15,6 +15,20 @@ const nuggetizer = (animal) =>{
 console.log(nuggetizer('pig'));
 
 const dogBreed = (input)=>{
-    console.log(`My favorite dog breed is ${input}`);
+    return `My favorite dog breed is ${input}`;
 };
-dogBreed('Border collier');
+console.log(dogBreed('Border collier'));
+
+const dogBreedDiv = document.getElementById('dog-breeds');
+dogBreedDiv.innerHTML = dogBreed('pitbull');
+
+const nuggetizerDiv = document.getElementById('nuggetizer');
+nuggetizerDiv.innerHTML = nuggetizer('deer');
+nuggetizerDiv.innerHTML += nuggetizer('cat');
+
+const printToDom = (divId, textToPrint) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML += textToPrint;
+};
+printToDom('dog-breeds', dogBreed('lab'));
+printToDom('nuggetizer','mmmmm');
