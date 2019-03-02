@@ -8,3 +8,8 @@
 namePrinter('ZOE','AMES');
 namePrinter('MARK','OKAFOR');
 namePrinter('AMBER','ROSE');
+
+const nuggetizer = (animal) =>{
+    return `processed ${animal}`;
+};
+console.log(nuggetizer('pig'));
