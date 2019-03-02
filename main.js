@@ -1,6 +1,6 @@
-const firstName = 'zoe';
-const lastName = 'Ames';
-console.log(firstName + ' ' + lastName);
+// const firstName = 'zoe';
+// const lastName = 'Ames';
+// console.log(firstName + ' ' + lastName);
 
  const namePrinter = (firstName, lastName) => {
     console.log(`${firstName}  ${lastName}`);
